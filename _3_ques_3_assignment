@@ -1,0 +1,16 @@
+def my_string(x):
+    upper_case_count = 0
+    lower_case_count = 0
+    for i in x:
+        if i.isupper():
+            upper_case_count += 1
+        elif i.islower():
+            lower_case_count += 1
+        else:
+            pass
+    print("Upper case count: ", upper_case_count)
+    print("Lower case count: ", lower_case_count)
+
+str = input("Enter a string: ")
+my_string(str)
+
